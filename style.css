@@ -380,3 +380,42 @@ tr:nth-child(odd) td {
         font-size: 28px;
     }
 }
+
+/* Watermark and developer credit */
+body::before {
+    content: "Soni Vishwakarma";
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-24deg);
+    font-size: clamp(38px, 9vw, 120px);
+    font-weight: 800;
+    letter-spacing: 4px;
+    white-space: nowrap;
+    color: rgba(179, 0, 0, 0.06);
+    pointer-events: none;
+    user-select: none;
+    z-index: 999;
+}
+
+.credit {
+    display: block;
+    margin-top: 6px;
+    letter-spacing: 1px;
+}
+
+.shine {
+    font-weight: bold;
+    background: linear-gradient(90deg, #ff5252, #ffd54f, #ffffff, #ffd54f, #ff5252);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: shine 3s linear infinite;
+}
+
+@keyframes shine {
+    to {
+        background-position: 200% center;
+    }
+}
