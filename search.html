@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Blood | BloodBank System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="navbar">
+    <a class="brand" href="index.html">&#129656; BloodBank System</a>
+    <div class="nav-links">
+        <a href="index.html">Home</a><a href="register.html">Donor Register</a><a href="search.html" class="active">Search Blood</a><a href="admin_login.html">Admin Login</a><a href="request.html">Request Blood</a><a href="view_requests.html">View Requests</a><a href="blood_info.html">Blood Info</a>    </div>
+</nav>
+<main>
+<div class="form-box">
+    <h2>Search Blood</h2>
+    <form method="get" action="search.html">
+        <select name="blood_group" required>
+            <option value="">Select Blood Group</option>
+                            <option value="A+" >A+</option>
+                            <option value="A-" >A-</option>
+                            <option value="B+" >B+</option>
+                            <option value="B-" >B-</option>
+                            <option value="O+" >O+</option>
+                            <option value="O-" >O-</option>
+                            <option value="AB+" >AB+</option>
+                            <option value="AB-" >AB-</option>
+                    </select>
+        <button type="submit">Search</button>
+    </form>
+</div>
+
+</main>
+<footer class="footer">
+    &copy; 2026 Online Blood Bank Management System
+</footer>
+<script src="app.js"></script>
+</body>
+</html>

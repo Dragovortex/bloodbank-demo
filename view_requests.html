@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Requests | BloodBank System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="navbar">
+    <a class="brand" href="index.html">&#129656; BloodBank System</a>
+    <div class="nav-links">
+        <a href="index.html">Home</a><a href="register.html">Donor Register</a><a href="search.html">Search Blood</a><a href="admin_login.html">Admin Login</a><a href="request.html">Request Blood</a><a href="view_requests.html" class="active">View Requests</a><a href="blood_info.html">Blood Info</a>    </div>
+</nav>
+<main>
+<div class="dashboard">
+    <h2>Blood Requests</h2>
+    <div class="table-wrap">
+                    <table>
+                <tr>
+                    <th>Sr.No</th>
+                    <th>Name</th>
+                    <th>Blood</th>
+                    <th>City</th>
+                    <th>Mobile</th>
+                    <th>Status</th>
+                                    </tr>
+                                    <tr>
+                        <td>1</td>
+                        <td>Kiran Pawar</td>
+                        <td>A+</td>
+                        <td>Pune</td>
+                        <td>9856231470</td>
+                        <td class="status completed">Completed</td>
+                                            </tr>
+                                    <tr>
+                        <td>2</td>
+                        <td>Meera Shah</td>
+                        <td>B+</td>
+                        <td>Mumbai</td>
+                        <td>9745123680</td>
+                        <td class="status completed">Completed</td>
+                                            </tr>
+                                    <tr>
+                        <td>3</td>
+                        <td>Suresh More</td>
+                        <td>O+</td>
+                        <td>Pune</td>
+                        <td>9632587410</td>
+                        <td class="status pending">Pending</td>
+                                            </tr>
+                            </table>
+            </div>
+            <p class="note">Login as admin to update or delete requests.</p>
+    </div>
+</main>
+<footer class="footer">
+    &copy; 2026 Online Blood Bank Management System
+</footer>
+<script src="app.js"></script>
+</body>
+</html>
